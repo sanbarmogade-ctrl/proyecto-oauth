@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1d2433;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1, h2 {
+  margin-bottom: 12px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+#map {
+  width: 100%;
+  height: 420px;
+  border-radius: 12px;
+}
+
+#bike-list {
+  padding-left: 18px;
+}
+
+pre {
+  background: #101828;
+  color: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  overflow: auto;
+}

@@ -1,0 +1,59 @@
+{
+  "info": {
+    "name": "Proyecto OAuth - API Bicicletas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Memory Bikes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/bikes/memory",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "bikes", "memory"]
+        }
+      }
+    },
+    {
+      "name": "Get All Bikes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/bikes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "bikes"]
+        }
+      }
+    },
+    {
+      "name": "Create Bike",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"BA-003\",\n  \"color\": \"Negro\",\n  \"model\": \"Paseo\",\n  \"lat\": -34.6021,\n  \"lng\": -58.3799\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/bikes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "bikes"]
+        }
+      }
+    }
+  ]
+}
