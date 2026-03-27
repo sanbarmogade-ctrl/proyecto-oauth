@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Bicicletas Auth</title>
+  <style>
+    body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 20px}
+    form{display:flex;flex-direction:column;gap:10px;max-width:420px}
+    input{padding:10px} .msg{padding:10px;margin:10px 0;border-radius:6px}
+    .success{background:#e8fff0}.error{background:#ffecec}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">Inicio</a> |
+    <a href="/login">Login</a> |
+    <a href="/register">Registro</a> |
+    <a href="/forgot-password">Recupero</a> |
+    <a href="/bicicletas">Bicicletas</a>
+  </nav>
+  <% if (success && success.length) { %><div class="msg success"><%= success[0] %></div><% } %>
+  <% if (error && error.length) { %><div class="msg error"><%= error[0] %></div><% } %>
+  <%- body %>
+</body>
+</html>

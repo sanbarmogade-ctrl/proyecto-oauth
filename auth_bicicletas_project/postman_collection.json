@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "Auth Bicicletas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login JWT",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "url": {"raw": "http://localhost:3000/api/auth/login", "host": ["http://localhost:3000"], "path": ["api","auth","login"]},
+        "body": {"mode": "raw", "raw": "{\n  \"email\": \"demo@example.com\",\n  \"password\": \"123456\"\n}"}
+      }
+    },
+    {
+      "name": "GET Bicicletas protegido",
+      "request": {
+        "method": "GET",
+        "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+        "url": {"raw": "http://localhost:3000/api/bicicletas", "host": ["http://localhost:3000"], "path": ["api","bicicletas"]}
+      }
+    }
+  ]
+}
